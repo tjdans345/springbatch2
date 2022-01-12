@@ -27,7 +27,6 @@ public class MultiSimpleJob {
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
 
-
 //    @Bean
 //    @Qualifier("job1-file-A")
 //    public Job simpleJob() {
