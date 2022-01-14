@@ -43,22 +43,22 @@ public class MultiSimpleJob {
 //                    return RepeatStatus.FINISHED;
 //                })).build();
 //    }
-
-    @Bean
-    @Qualifier("job1-file-B")
-    public Job simpleJob2() {
-        return jobBuilderFactory.get("simpleJob2")
-                .start(simpleStep2())
-                .build();
-    }
-
-    @Bean
-    public Step simpleStep2() {
-        return stepBuilderFactory.get("simpleStep233")
-                .tasklet(((contribution, chunkContext) -> {
-                    log.info(">>>>>>>>>>>>>>>>> 켕켕 job started >>>>>>>>>>>");
-                    return RepeatStatus.FINISHED;
-                })).build();
-    }
+//
+//    @Bean
+//    @Qualifier("job1-file-B")
+//    public Job simpleJob2() {
+//        return jobBuilderFactory.get("simpleJob2")
+//                .start(simpleStep2())
+//                .build();
+//    }
+//
+//    @Bean
+//    public Step simpleStep2() {
+//        return stepBuilderFactory.get("simpleStep233")
+//                .tasklet(((contribution, chunkContext) -> {
+//                    log.info(">>>>>>>>>>>>>>>>> 켕켕 job started >>>>>>>>>>>");
+//                    return RepeatStatus.FINISHED;
+//                })).build();
+//    }
 
 }
